@@ -1,12 +1,20 @@
-# بنستورد الكلاس من ملف models
-from models import Employee
+from models import Employee, Manager
 
-# إنشاء الموظف الأول
-emp1 = Employee("Fatima", "Developer", 1200)
+def main():
+    print("--- Create a Manager Account ---")
+    name = input("Enter Name: ")
+    role = input("Enter Role: ")
+    dept = input("Enter Department: ")
+    
+    try:
+        salary_input = input("Enter Salary: ")
+        salary = float(salary_input)
+        
+        mgr = Manager(name, role, salary, dept)
+        mgr.display_info()
+        
+    except ValueError:
+        print("\n[!] Error: Please enter a valid number for salary.")
 
-# إنشاء الموظف الثاني
-emp2 = Employee("Marco", "Engineer", 1500)
-
-# استدعاء الميثود لعرض البيانات
-emp1.display_info()
-emp2.display_info()
+if __name__ == "__main__":
+    main()
