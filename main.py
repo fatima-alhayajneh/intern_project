@@ -1,6 +1,6 @@
 from models import Employee
 
-# الكود تبعك بكمل هون:
+
 emp1 = Employee("Mais", "Developer", 1200)
 emp2 = Employee("Mohammed", "Engineer", 1500)
 
