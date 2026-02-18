@@ -1,12 +1,8 @@
-# بنستورد الكلاس من ملف models
 from models import Employee
 
-# إنشاء الموظف الأول
-emp1 = Employee("Fatima", "Developer", 1200)
+# الكود تبعك بكمل هون:
+emp1 = Employee("Mais", "Developer", 1200)
+emp2 = Employee("Mohammed", "Engineer", 1500)
 
-# إنشاء الموظف الثاني
-emp2 = Employee("Marco", "Engineer", 1500)
-
-# استدعاء الميثود لعرض البيانات
-emp1.display_info()
-emp2.display_info()
+emp1.display_details()
+emp2.display_details()
