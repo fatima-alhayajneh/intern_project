@@ -17,6 +17,9 @@ class Manager(Employee):
         self.department = department
 
     def display_info(self):
-        super().display_info()
+        print(f"--- Manager Detail ---")
+        print(f"Name: {self.name}")
+        print(f"Role: {self.role}")
+        print(f"Salary: ${self.salary}")
         print(f"Department: {self.department}")
-        
+        print("-----------------------")
